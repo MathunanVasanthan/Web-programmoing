@@ -1,0 +1,268 @@
+body{
+    background-image: url(CourseBG.png);
+    background-size:cover;
+}
+
+.top{
+    background-image: url(Untitled-3.png);
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px;
+    text-align: center;
+    font-size: 35px;
+    width: auto;
+    align-items: center;
+    border-style: outset;
+
+}
+
+.btn{
+    
+    background: linear-gradient(#cba305,#d7b52b);
+    padding: 20px;
+    margin-bottom: 60px;    
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    border-style: outset;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 40px; 
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
+}
+
+
+label{
+    color: wheat;
+}
+
+footer {
+    background-image: url(CourseFoot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    border-style: outset;
+    margin-top: 50px;
+    border-style: outset;
+}
+
+.section{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    position: relative;
+    width: 1750px;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    width: auto;
+}
+.container .box{
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 5px;
+    background: #000;
+    transition: 00.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
+    border-style: outset;
+    
+   
+}
+.container:hover .box{
+    transform: rotateY(25deg);
+    
+}
+
+.container .box:hover ~ .box{
+    transform: rotateY(-25deg);
+    
+}
+
+.container .box:hover{
+    transform: rotateY(0deg);
+    
+}
+
+
+.container .box .imgbox{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .box:hover .imgbox{
+    opacity: 0.4;
+}
+
+header h2{
+    background-color: #fad02c;
+    color: #ffffff;
+}
+
+.container .box .imgbox img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+
+}
+
+.container .box .content h4{
+    color: white;
+    transition: 000.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+
+.container .box:hover .content h4{
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+.container .box .content p{
+    color: #fff;
+    transition: 000.5s;
+    font-size: 20px;
+    transform: translateY(220px);
+}
+
+.container .box:hover .content p{
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+}
+
+.searchbox{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 500px;
+    transform: translate(0%,-50%);
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.dropdown{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
+}
+
+.s1{
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    margin-top: 0px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    width: auto;
+}
+.s2{
+    position: absolute;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffc107;
+    color: #FFF;
+    
+
+}
+
+.h3{
+    color: wheat;
+    padding: 0;
+    margin: 0%;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.d1{
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.d1 input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background:#fff ;
+    border: none;
+    outline: none;
+    
+    
+}
+
+.o1{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.o1:hover{
+    background: #ffc107;
+    color: #fff;
+}
+
+
+
